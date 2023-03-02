@@ -1,0 +1,239 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: #fff;
+  border-radius: 10px;
+  border-color: #8f6dff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8f6dff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8f6dff;
+}
+
+.modals .modal-body i {
+  margin-right: 4px;
+}
+.modals .modal-body .manage_user {
+  margin-right: 10px;
+}
+.modals .modal-body .list_user {
+  font-size: 18px;
+  font-weight: 500px;
+}
+.modals .modal-body .model_content {
+  border: 1px solid #ddd;
+  padding: 5px 5px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.modals .modal-body .model_content table.table_stt {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+}
+.modals .modal-body .model_content table.table_stt input {
+  width: 100%;
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+.modals .modal-body .model_content table.table_stt td, .modals .modal-body .model_content table.table_stt th {
+  padding: 18px 10px;
+  border: 1px solid #ddd;
+  background-color: #fbfaff;
+}
+.modals .modal-body .model_content table.table_stt td:nth-child(1), .modals .modal-body .model_content table.table_stt th:nth-child(1) {
+  text-align: center;
+}
+.modals .modal-body .model_content table.table_stt tr.acctive_new td {
+  background: #8f6dff !important;
+  color: #ffffff;
+}
+.modals .modal-body .model_content .form_finfo {
+  padding: 20px 3px;
+}
+.modals .modal-body .model_content .hed_table {
+  display: flex;
+  position: relative;
+  min-height: 35px;
+  margin-bottom: 12px;
+}
+.modals .modal-body .model_content .hed_table .title_hed {
+  width: 50%;
+}
+.modals .modal-body .model_content .hed_table .title_hed input {
+  padding: 3px 6px;
+  width: 100%;
+  border-radius: 4px;
+}
+.modals .modal-body .model_content .hed_table .check_all {
+  width: 55px;
+}
+.modals .modal-body .model_content .hed_table .images_all {
+  min-width: 97px;
+  text-align: center;
+}
+.modals .modal-body .model_content .hed_table .check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.modals .modal-body .model_content .hed_table .checkmark {
+  position: absolute;
+  top: 4px;
+  left: 17px;
+  height: 25px;
+  width: 25px;
+  background-color: #8f6dff;
+}
+.modals .modal-body .model_content .hed_table .check:hover input ~ .checkmark {
+  background-color: #8f6dff;
+}
+.modals .modal-body .model_content .hed_table .container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.modals .modal-body .model_content .hed_table .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.modals .modal-body .model_content .hed_table .check input:checked ~ .checkmark:after {
+  display: block;
+}
+.modals .modal-body .model_content .hed_table .check .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.modals .modal-body .model_content .box_info-list {
+  overflow-y: scroll;
+  height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+.modals .modal-body .model_content .box_info-list .student_group span {
+  font-size: 15px;
+  font-weight: 700;
+}
+.modals .modal-body .model_content .box_info-list table {
+  font-size: 15px;
+  width: 100%;
+}
+.modals .modal-body .model_content .box_info-list table th, .modals .modal-body .model_content .box_info-list table td {
+  text-align: center;
+}
+.modals .modal-body .model_content .box_info-list table th, .modals .modal-body .model_content .box_info-list table td:nth-child(3) {
+  text-align: center;
+}
+.modals .modal-body .model_content .box_info-list table img {
+  width: 100%;
+  max-width: 50px;
+  border-radius: 5px;
+}
+.modals .modal-body .model_content .box_info-list table td, .modals .modal-body .model_content .box_info-list table th {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  position: relative;
+  min-width: 40px;
+}
+.modals .modal-body .model_content .box_info-list table tr, .modals .modal-body .model_content .box_info-list table th {
+  padding: 10px 10px;
+  border: none !important;
+}
+.modals .modal-body .model_content .box_info-list table tr input, .modals .modal-body .model_content .box_info-list table th input {
+  padding: 5px 10px;
+}
+.modals .modal-body .model_content .box_info-list table .name_text {
+  text-align: left;
+}
+.modals .modal-body .model_content .box_info-list table .name_text span {
+  color: #78baf4;
+  padding-left: 8px;
+}
+.modals .modal-body .model_content .box_info-list table td input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.modals .modal-body .model_content .box_info-list table .checkmark {
+  position: absolute;
+  top: 16px;
+  left: 17px;
+  height: 23px;
+  width: 23px;
+  background-color: #eee;
+}
+.modals .modal-body .model_content .box_info-list table input:checked ~ .checkmark {
+  background-color: #8f6dff;
+}
+.modals .modal-body .model_content .box_info-list table .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.modals .modal-body .model_content .box_info-list table input:checked ~ .checkmark:after {
+  display: block;
+}
+.modals .modal-body .model_content .box_info-list table .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.modals .modal-body .model_content .box_info-list table .info {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+.modals .modal-body .model_content .box_info-list table .info div {
+  margin-right: 5px;
+}
+.modals .modal-body .model_content .box_info-list table .info span {
+  font-size: 15px;
+  padding-left: 7px;
+  font-weight: 500px;
+}
+.modals .modal-body .model_content .btn_chon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.modals .modal-body .model_content tr.acctive_new td:nth-child(1) {
+  position: relative;
+}
+.modals .modal-body .model_content tr.acctive_new td:nth-child(1)::before {
+  content: "Nhóm mới";
+  position: absolute;
+  left: -6px;
+  top: 0px;
+  width: 66px;
+  height: 17px;
+  background: red;
+  color: #fff;
+  font-size: 10px;
+  line-height: 17px;
+}/*# sourceMappingURL=model.css.map */
